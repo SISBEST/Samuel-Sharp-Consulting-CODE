@@ -1,0 +1,26 @@
+p{
+  color:blue;
+  }
+h1{
+  color:blue;
+  font-family: 'Audiowide', sans;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+h2{
+  color:orange;
+  font-family: 'Monoton', sans;
+  }
+h3{
+  color:green;
+  font-family: 'Monoton', sans;
+  }
+body{
+  background-color:aqua;
+  }
+a{
+  font-family:sans;
+}
+p{
+  font-family:sans;
+}
