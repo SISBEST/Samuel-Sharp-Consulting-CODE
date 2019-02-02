@@ -103,15 +103,19 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<div id="store-area" hidden><tw-storydata name="COHD" startnode="16" creator="Twine" creator-version="2.2.1" ifid="0A13B2C3-79D7-420A-9FE9-C1BFF661D6C0" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
-  background-color:red;
+  background-color:rgb(135, 116, 116);
   font-family:sans;
   text-align:center;
+  color:black;
+}
+p{
+  size:30px;
 }
 h1{
   color:orange;
 }
 h2{
-  color:green;
+  color:blue;
 }
 h3{
   color:yellow;
@@ -131,10 +135,29 @@ h3{
     background: #00ff00;
 }
 a{
- color:orange; 
+ color:red; 
 }
 a:hover{
   color:black;
+}
+#select{
+	color:black;
+}
+#select:hover{
+	color:rgb(14, 32, 61);
+}
+#ui-dialog-body{
+  color:orange;
+}
+#restart-cancel{
+  background-color:green;
+}
+#restart-ok{
+  background-color:red;
+}
+#ui-bar-toggle{
+  background-color:red;
+  color:brown;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*
         Macro: timedprogressbar
 
@@ -257,7 +280,7 @@ Macro.add("timedprogressbar", {
         });
     },
 });
-</script><tw-passagedata pid="1" name="Main Menu" tags="" position="1196,108" size="100,100">&lt;h1&gt;Select an episode:&lt;/h1&gt;
+</script><tw-passagedata pid="1" name="Main Menu" tags="" position="1196,108" size="100,100">&lt;h1 id=&quot;select&quot;&gt;Select an episode:&lt;/h1&gt;
 &lt;h2&gt;Finished:&lt;/h2&gt;
 [[Mad Burger]]
 &lt;h2&gt;In Production:&lt;/h2&gt;
@@ -569,8 +592,12 @@ TBD
 Filmed at:
 S House Studios, San Diego, CA
 [[Exit-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="16" name="Character Selection" tags="" position="1986.3999938964844,518" size="100,100">&lt;h1&gt;Select a character:&lt;/h1&gt;
-[[Male Sauceotron]]
-[[Female Sauceotron]]</tw-passagedata><tw-passagedata pid="17" name="Audition" tags="" position="1203,0" size="100,100">&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSf2Z5ezdW2BdHIveYnK2_smtDiH9kdo1AVKwzc0lAqtulxfUw/viewform?usp=sf_link&quot;&gt;Launch&lt;/a&gt;</tw-passagedata><tw-passagedata pid="18" name="...3" tags="" position="58,1336" size="100,100">Old Man Wheatie: Looks like Ted the Taco just came in. WHy would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
+&lt;h3&gt;[[Male Sauceotron]]&lt;br&gt;
+[[Female Sauceotron]]&lt;/h3&gt;
+&lt;&lt;set $start1 to false&gt;&gt;\
+&lt;&lt;set $start2 to false&gt;&gt;\
+&lt;&lt;set $start3 to false&gt;&gt;\
+&lt;&lt;set $start4 to false&gt;&gt;\</tw-passagedata><tw-passagedata pid="17" name="Audition" tags="" position="1203,0" size="100,100">&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSf2Z5ezdW2BdHIveYnK2_smtDiH9kdo1AVKwzc0lAqtulxfUw/viewform?usp=sf_link&quot;&gt;Launch&lt;/a&gt;</tw-passagedata><tw-passagedata pid="18" name="...3" tags="" position="58,1336" size="100,100">Old Man Wheatie: Looks like Ted the Taco just came in. WHy would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
 
 Ted: No, I live!
 
@@ -595,6 +622,10 @@ Narrator: Next time on Chronicles of hot dog
 [[Go-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="20" name="Female Sauceotron" tags="" position="1716.3999938964844,1" size="100,100">Sauceotron: So glad you made the right choice! Click below to continue!
 &lt;&lt;set $gender to &quot;female&quot;&gt;&gt;\
 [[Go-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="21" name="Stats" tags="" position="1480,190" size="100,100">Gender: $gender
+Episode 2 finished: &lt;&lt;print $start1&gt;&gt;
+Episode 3 finished: &lt;&lt;print $start2&gt;&gt;
+Episode 4 finished: &lt;&lt;print $start3&gt;&gt;
+Episode 5 finished: &lt;&lt;print $start4&gt;&gt;
 [[Back-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="22" name="PassageFooter" tags="" position="2078,189" size="100,100">&lt;br&gt;&lt;em&gt;Chronicles Of Hot Dog
 Developed in association with Pig Stuf Comix&lt;/em&gt;</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
