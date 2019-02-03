@@ -112,7 +112,7 @@ body{
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
 p{
-  size:30px;
+  font-size:30px;
   font-family: 'ZCOOL KuaiLe', cursive;
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
@@ -149,13 +149,14 @@ h3{
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
 a{
- color:red; 
-  font-family: 'Faster One', cursive;
+ color:blue; 
+  font-family: 'Major Mono Display', monospace;
+  font-size:40px
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
 a:hover{
-  color:red;
-  font-family: 'Major Mono Display', monospace;
+  color:orange;
+  font-family: 'Faster One', cursive;
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
 #select{
@@ -191,7 +192,7 @@ tw-story{
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
 }
 #aud:hover{
-  size:60px;
+  font-size:60px;
 }
 em{
   cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
@@ -216,7 +217,11 @@ button{
  color:orange; 
 }
 #story-banner{
-  color:orange;</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*
+  color:orange;
+}
+iframe{
+  cursor: url('http://apps.samuelsharp.com/cohd/cursorcohd.png'), crosshair;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*
         Macro: timedprogressbar
 
         Description: Show a dynamically-created "progress bar" 
@@ -339,10 +344,10 @@ Macro.add("timedprogressbar", {
     },
 });
 
-</script><tw-passagedata pid="1" name="Main Menu" tags="" position="1225,150" size="100,100">&lt;h1 id=&quot;select&quot;&gt;Select an episode:&lt;/h1&gt;
+</script><tw-passagedata pid="1" name="Main Menu" tags="" position="1225,150" size="100,100">&lt;strong&gt;&lt;h1 id=&quot;select&quot;&gt;Select an episode:&lt;/h1&gt;&lt;/strong&gt;
 &lt;h2&gt;Finished:&lt;/h2&gt;
 [[Mad Burger]]
-&lt;h2&gt;In Production:&lt;/h2&gt;
+&lt;strong&gt;&lt;h2&gt;In Production:&lt;/h2&gt;&lt;/strong&gt;
 The Food Files:
 &lt;&lt;if $start1 is true&gt;&gt;\
 [[Restart Episode 2-&gt;The Food Files]]
@@ -355,12 +360,19 @@ Powell&#39;s Wars:
 &lt;&lt;else&gt;&gt;\
 [[Start Episode 3-&gt;Powell&#39;s Wars]]
 &lt;&lt;/if&gt;&gt;\
-&lt;h2&gt;Coming Soon:&lt;/h2&gt;
+&lt;strong&gt;&lt;h2&gt;Coming Soon:&lt;/h2&gt;&lt;/strong&gt;
 [[The Next Generation]]
 [[Portal Hall]]
-&lt;h2&gt;More:&lt;/h2&gt;
+&lt;strong&gt;&lt;h2&gt;More:&lt;/h2&gt;&lt;/strong&gt;
 [[Audition]]
-[[Stats]]</tw-passagedata><tw-passagedata pid="2" name="I’m a big moist burger!" tags="" position="125,575" size="100,100">Old Man Wheatie: Yes, that’s very nice.
+[[Stats]]
+&lt;iframe id=&quot;main&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/mainmenu.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt;
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 95000);
+function reloadIFrame() { document.getElementById(&quot;main&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/mainmenu.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="2" name="I’m a big moist burger!" tags="" position="125,575" size="100,100">Old Man Wheatie: Yes, that’s very nice.
 Sauceotron: Are there any bad dudes I can beat up in order to get myself into the League?
 
 Old Man Wheatie: Ted duh Taco, son.
@@ -463,7 +475,7 @@ Old Man Wheatie: When I die, I want to die like a hot dog.
 [[...-&gt;...3]]
 &lt;&lt;timedprogressbar 10 20em&gt;&gt;
 	 &lt;&lt;goto &quot;...3&quot;&gt;&gt;
-&lt;&lt;/timedprogressbar&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="...2" tags="" position="508,868" size="100,100">Sauceotron stands up and runs out.
+&lt;&lt;/timedprogressbar&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="...2" tags="" position="500,875" size="100,100">Sauceotron stands up and runs out.
 Old Man Wheatie: I warned them not to go and kill themselves. What do they do? Go and kill themselves. What a world!
 
 CUT TO STREET
@@ -524,7 +536,7 @@ Old Man Wheatie: When I die, I want to die like a hot dog.
 &lt;&lt;/timedprogressbar&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="No, I can’t let you!" tags="" position="325,1200" size="100,100">Old Man Wheatie: Actually, I really do want to die like a hot dog, but what does that button over there do? Please go hit it. Just see what it does. 
 Sauceotron walks toward the button that says, “Erupt!”
 
-Old Man Wheatie: Looks like Ted the Taco just came in. WHy would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
+Old Man Wheatie: Looks like Ted the Taco just came in. Why would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
 
 Ted: No, I live!
 
@@ -547,7 +559,7 @@ Narrator: Next time on Chronicles of hot dog:
 [[End Credits]]</tw-passagedata><tw-passagedata pid="8" name="Alright, let’s see what this button does!" tags="" position="525,1200" size="100,100">Sauceotron: I wonder what that button over there does.
 Sauceotron walks toward the button that says, “Erupt!”
 
-Old Man Wheatie: Looks like Ted the Taco just came in. WHy would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
+Old Man Wheatie: Looks like Ted the Taco just came in. Why would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
 
 Ted: No, I live!
 
@@ -608,7 +620,14 @@ Lukas: HEY! THAT WAS SUPPOSED TO BE MY LINE!
 &lt;&lt;/timedprogressbar&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Powell&#39;s Wars" tags="bookmark" position="1200,300" size="100,100">&lt;&lt;set $start2 to true&gt;&gt;\
 A car drives on a road, heading towards a &quot;Powell&#39;s Restaurant&quot;.
 </tw-passagedata><tw-passagedata pid="11" name="The Next Generation" tags="bookmark" position="1350,300" size="100,100">&lt;&lt;set $start3 to true&gt;&gt;\</tw-passagedata><tw-passagedata pid="12" name="Portal Hall" tags="bookmark" position="1500,325" size="100,100">&lt;&lt;set $start4 to true&gt;&gt;\</tw-passagedata><tw-passagedata pid="13" name="Mad Burger" tags="bookmark" position="1000,25" size="100,100">Chronicles of Hot Dog: Mad Burger was originally released as Chronicles of Hot Dog: The Movie. So there&#39;s a bit of junk (BTS extras) at the end, but you can stop.
-[[Got it!-&gt;movie]]</tw-passagedata><tw-passagedata pid="14" name="movie" tags="" position="750,25" size="100,100">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n1-j8QTG1LA?modestbranding=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="15" name="End Credits" tags="" position="600,1400" size="100,100">&lt;&lt;set $start1 to true&gt;&gt;\
+[[Got it!-&gt;movie]]
+&lt;iframe id=&quot;info&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt; 
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 126000);
+function reloadIFrame() { document.getElementById(&quot;info&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="14" name="movie" tags="" position="750,25" size="100,100">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n1-j8QTG1LA?modestbranding=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="15" name="End Credits" tags="" position="600,1400" size="100,100">&lt;&lt;set $start1 to true&gt;&gt;\
 Directed by: Daniel Dotson
 
 Written by: Daniel Dotson &amp; Samuel Sharp
@@ -650,9 +669,32 @@ TBD
 
 Filmed at:
 S House Studios, San Diego, CA
-[[Exit-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="16" name="Character Selection" tags="" position="1975,525" size="100,100">&lt;h1&gt;Select a character:&lt;/h1&gt;
+and
+Pioneer Park, San Diego, CA
+[[Exit-&gt;Main Menu]]
+&lt;iframe id=&quot;info&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/end.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt; 
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 95000);
+function reloadIFrame() { document.getElementById(&quot;info&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/end.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="Character Selection" tags="" position="1975,525" size="100,100">&lt;h1&gt;Select a character:&lt;/h1&gt;
 &lt;h3&gt;[[Male Sauceotron]]&lt;br&gt;
-[[Female Sauceotron]]&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="17" name="Audition" tags="" position="1200,0" size="100,100">&lt;a id=&quot;aud&quot; href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSf2Z5ezdW2BdHIveYnK2_smtDiH9kdo1AVKwzc0lAqtulxfUw/viewform?usp=sf_link&quot; target=&quot;_blank&quot;&gt;Audition Form&lt;/a&gt;</tw-passagedata><tw-passagedata pid="18" name="...3" tags="" position="100,1250" size="100,100">Old Man Wheatie: Looks like Ted the Taco just came in. WHy would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
+[[Female Sauceotron]]&lt;/h3&gt;
+&lt;iframe id=&quot;char&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/openscreen.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt;
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 95000);
+function reloadIFrame() { document.getElementById(&quot;char&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/openscreen.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Audition" tags="" position="1200,0" size="100,100">&lt;a id=&quot;aud&quot; href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSf2Z5ezdW2BdHIveYnK2_smtDiH9kdo1AVKwzc0lAqtulxfUw/viewform?usp=sf_link&quot; target=&quot;_blank&quot;&gt;Audition Form&lt;/a&gt;
+&lt;iframe id=&quot;info&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt; 
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 126000);
+function reloadIFrame() { document.getElementById(&quot;info&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="...3" tags="" position="100,1250" size="100,100">Old Man Wheatie: Looks like Ted the Taco just came in. Why would he be in here? Unless … Unless, he’s just a puppet for these sneaky crystalords.
 
 Ted: No, I live!
 
@@ -681,8 +723,15 @@ Episode 2 finished: &lt;&lt;print $start1&gt;&gt;
 Episode 3 finished: &lt;&lt;print $start2&gt;&gt;
 Episode 4 finished: &lt;&lt;print $start3&gt;&gt;
 Episode 5 finished: &lt;&lt;print $start4&gt;&gt;
-[[Back-&gt;Main Menu]]</tw-passagedata><tw-passagedata pid="22" name="PassageFooter" tags="" position="2100,200" size="100,100">&lt;br&gt;&lt;em&gt;Chronicles Of Hot Dog
-Developed in association with Pig Stuf Comix&lt;/em&gt;</tw-passagedata><tw-passagedata pid="23" name="StoryInit" tags="" position="2000,200" size="100,100">&lt;&lt;set $start1 to false&gt;&gt;
+[[Back-&gt;Main Menu]]
+&lt;iframe id=&quot;info&quot; src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot; allow=&quot;autoplay&quot; style=&quot;display:none&quot; id=&quot;iframeAudio&quot;&gt;
+&lt;/iframe&gt; 
+&lt;script&gt;
+window.setInterval(&quot;reloadIFrame();&quot;, 126000);
+function reloadIFrame() { document.getElementById(&quot;info&quot;).src=&quot;http://apps.samuelsharp.com/cohdfiles/info.mp3&quot;;
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="PassageFooter" tags="" position="2100,200" size="100,100">&lt;br&gt;&lt;em&gt;Chronicles Of Hot Dog
+Developed in association with Pig Stuf Comix&lt;/em&gt;</tw-passagedata><tw-passagedata pid="23" name="StoryInit" tags="" position="2000,225" size="100,100">&lt;&lt;set $start1 to false&gt;&gt;
 &lt;&lt;set $start2 to false&gt;&gt;
 &lt;&lt;set $start3 to false&gt;&gt;
 &lt;&lt;set $start4 to false&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="StoryCaption" tags="" position="2200,200" size="100,100">Chronicles Of Hot Dog</tw-passagedata><tw-passagedata pid="25" name="StoryShare" tags="" position="2000,100" size="100,100">&lt;a href=&quot;mailto:some@friend.com?subject=Chronicles%20Of%20Hot%20Dog%20is%20sooooooo%20fun!&amp;body=It&#39;s%20a%20choose-your-own%20adventure%20story!%0ATry%20it%20out!%0Aapps.samuelsharp.com%2Fcohd&quot;&gt;Email&lt;/a&gt;
