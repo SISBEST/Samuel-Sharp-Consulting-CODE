@@ -5,8 +5,15 @@
   
 <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
 <video autoplay loop id="video-background" muted plays-inline>
-  <source src="https://sites.google.com/site/sitehostsamuelaaa/files/cohdcut.mp4?attredirects=0" type="video/mp4">
+  <source src="https://apps.samuelsharp.com/cohdfiles/backg.mp4" type="video/mp4">
 </video>
+<iframe id="main" src="http://apps.samuelsharp.com/cohdfiles/mainmenu.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
+<script>
+window.setInterval("reloadIFrame();", 95000);
+function reloadIFrame() { document.getElementById("main").src="http://apps.samuelsharp.com/cohdfiles/mainmenu.mp3";
+}
+</script>
 <style>
 body {
   margin: 0;
