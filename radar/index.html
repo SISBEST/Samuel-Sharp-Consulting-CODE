@@ -26,7 +26,7 @@
   background-color: #f1f1f1;
 }
 </style>
-<title>Project Radar-Minecraft Fan Event</title>
+<title>Project Radar | Minecraft Fan Event</title>
 <h1>Project Radar</h1>
 <h2>A minecraft-themed fan event at Powerhouse Park on Mar. 3!</h2>
 Get tickets for individual activities, they're free!
@@ -51,8 +51,10 @@ for (i = 0; i < coll.length; i++) {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
+	coll.innerHTML = "Get Tickets";
       content.style.display = "none";
     } else {
+	coll.innerHTML = "Hide Registration";
       content.style.display = "block";
     }
   });
