@@ -7,14 +7,14 @@ text-align:center;
 }
 </style>
 <form>
-    Enter an achievement: 
+    Enter an achievement ID: 
     <input id="ach" type="password" maxlength="6">
     <input onclick="return getach()" type="submit" value="View achievement">
 </form>
 
 <script>
     function getach(){
-        window.location = "/viewach/" document.getElementById("ach").value + ".html";
+        window.location = document.getElementById("ach").value;
         return false;
     }
 </script>
