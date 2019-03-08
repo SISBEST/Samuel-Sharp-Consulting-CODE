@@ -12,7 +12,9 @@ cursor:crosshair;
     <input id="ach" type="password" maxlength="6">
     <input onclick="return getach()" type="submit" value="View achievement">
 </form>
-
+<audio autoplay loop hidden>
+     <source src="https://apps.samuelsharp.com/nutfree/start.mp3" id="myAudio" type="audio/mpeg">
+ </audio>
 <script>
     function getach(){
         window.location = document.getElementById("ach").value;
