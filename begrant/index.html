@@ -1,1 +1,66 @@
-Coming Soon!
+<link href="https://fonts.googleapis.com/css?family=Geo|Major Mono Display" rel="stylesheet">
+
+<!--  Content  -->
+<title>Be Grant</title>
+<h1>Be Grant<br>It's <b>your</b> turn to lead<br /> <span><a href="/nutfree/intro.html">Click here to begin</a></span></h1>
+  
+<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+<video autoplay loop id="video-background" plays-inline>
+  <source src="https://apps.samuelsharp.com/begrant/backg.mp4" type="audio/mp4">
+</video>
+<audio allow="autoplay" style="display:none">
+
+</audio>
+</div>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #f4bc42;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: crosshair;
+}
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+  font-family: 'Geo', sans;
+  cursor: crosshair;
+}
+h1 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: 'Geo', sans;
+  text-align: center;
+  cursor: crosshair;
+}
+h1 span {
+  font-family: 'Major Mono Display', sans;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: crosshair;
+}
+h1 span a {
+  color: #fff;
+  font-family: 'Major Mono Display', sans;
+  cursor: crosshair;
+}
+a{
+  text-decoration: none;
+  }
+</style>
