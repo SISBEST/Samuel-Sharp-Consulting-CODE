@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sbss.css" />
+    <title>Smart Boards School Supplies</title>
+
+  </head>
+  <body>
+  	<a href="mail.html">
+	<div id="signup">
+      <marquee>Get a coupon - Sign up for our mailing list!</marquee>
+      <img src="mailing.gif" id="mail"/>
+    </div>
+    </a>
+    <header>
+    <div id="title">
+      <h1>
+		<a href="index.html">
+        	Smart Boards School Supplies
+		</a>
+      </h1>
+      </div>
+      <nav>
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="loc.html">Locations</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="tuts.html">How-To</a></li>
+      </ul>
+      </nav>
+    </header>
+    <br>
+    <article>
+		<h1>Mailing List</h1>
+		<form method="post">
+			<label>First Name</label>
+			<input id="fname">
+			<label>Last Name</label>
+			<input id="lname">
+			<label>Email</label>
+			<input id="email" type="email">
+			<label>Gender</label>
+			<input id="gender">
+			<label>Age</label>
+			<input id="age" type="number">
+			<button onclick="val();">Sign Up</button>
+			<button onclick="reset();">Reset</button>
+		</form>
+    </article>
+    <aside>
+		<h3>Sign up, get a coupon!</h3>
+		<img src="Tickets.jpg" class="simg"/>
+		<h4 id="date1">Today's date is being calculated. Hang on!</h4>
+    	<h3>Featured Products</h3>
+    	<a href="backpack.html" target="_blank"><img src="backpack.jpg"  class="simg" /></a>
+    	<a href="pens.html" target="_blank"><img src="ballpoint_pens.jpg"  class="simg" /></a>
+    	<a href="sci.html" target="_blank"><img src="scissors.jpg"  class="simg" /></a>
+    	<a href="tix.html" target="_blank"><img src="Tickets.jpg"  class="simg" /></a>
+    </aside>
+    <footer>
+    	<p>Copyright &copy; 2019 Smart Boards School Supplies</p>
+    </footer>
+	<script type = "text/javascript">
+			var $ = function ( id ) { return document.getElementById( id ); }
+			window.onload = function getdate(){
+				var today = new Date();
+				var dd = String(today.getDate()).padStart(2, '0');
+				var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+				var yyyy = today.getFullYear();
+				const dateel = document.getElementById('date1');
+				dateel.innerText = 'The date is: ' + mm + '/' + dd + '/' + yyyy;
+			}
+			function reset(){
+				$("fname").value = "";
+				$("lname").value = "";
+				$("email").value = "";
+				$("age").value = "";
+				$("gender").value = "";
+			}
+			function val()
+			{
+				var first = $("fname").value;
+				var last = $("lname").value;
+				var email = $("email").value;
+				var age = $("age").value;
+				var gender = $("gender").value;
+				var errors = "";
+				var intro = false;
+				
+				if ( first == "" ){
+					if(intro == false){
+						intro = true;
+						errors += "You're still missing your ";
+					}
+					errors += "first name, ";
+				}
+				if ( last == "" ){
+					if(intro == false){
+						intro = true;
+						errors += "You're still missing your ";
+					}
+					errors += "last name, ";
+			}
+				if ( email == "" ){
+					if(intro == false){
+						intro = true;
+						errors += "You're still missing your ";
+					}
+					errors += "email, ";
+		}
+				if ( age == "" ){
+					if(intro == false){
+						intro = true;
+						errors += "You're still missing your ";
+					}
+					errors += "age, ";
+		}
+				if ( gender == "" ){
+					if(intro == false){
+						intro = true;
+						errors += "You're still missing your ";
+					}
+					errors += "gender.";
+		}
+				if ( errors == "" )
+					document.write('<img src="coupon.png" style="width=500px; height=500px"/> <br> <h1>Here is your coupon!</h1>')
+				else
+					alert( errors );
+			}
+	  </script>
+  </body>
+</html>

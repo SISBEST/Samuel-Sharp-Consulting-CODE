@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script>
+    	function secret(){
+    		document.write("<h1>You found the secret page! Well done.</h1><br><img src='https://i.chzbgr.com/full/9013910528/hAB49129F/' /> ");
+    	}
+    </script>
     <link rel="stylesheet" href="sbss.css" />
     <title>Smart Boards School Supplies</title>
   </head>
@@ -27,26 +32,23 @@
         <li><a href="loc.html">Locations</a></li>
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="tuts.html">How-To</a></li>
-        <li><a href="javascript:alert('Copyright © 2019 Smart Boards School Supplies');">Copyright</a></li>
       </ul>
       </nav>
     </header>
     <br>
     <article>
-    	<h1>Welcome to Smart Boards!</h1>
-    	<h2>Take a look around!</h2>
-		<h3>Featured Products</h3>
+    	<h1>Find us around the globe!</h1>
+    	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=10KuJrXzdJ8K0AO3Kmu-FBdi3ErPMpv37" width="100%" height="480px"></iframe>
+    </article>
+    <aside>
+    	<h3>Featured Products</h3>
     	<a href="backpack.html" target="_blank"><img src="backpack.jpg"  class="simg" /></a>
     	<a href="pens.html" target="_blank"><img src="ballpoint_pens.jpg"  class="simg" /></a>
     	<a href="sci.html" target="_blank"><img src="scissors.jpg"  class="simg" /></a>
     	<a href="tix.html" target="_blank"><img src="Tickets.jpg"  class="simg" /></a>
-    	
-    </article>
-    <aside>
-		<video src="hero.mp4" muted autoplay loop width="100%" height="100%"/>
     </aside>
     <footer>
-    	<p>Copyright &copy; 2019 Smart Boards School Supplies</p>
+    	<p>Copyright &copy; 2019 Smart Boards School <a onclick="secret();">Supplies</a></p>
     </footer>
   </body>
 </html>
