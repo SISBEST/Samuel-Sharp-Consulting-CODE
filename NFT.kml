@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>NFT</name>
+    <Style id="icon-1899-000000-nodesc-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-000000-nodesc-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-000000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-000000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-000000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-6619-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>6.619</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-000000-6619-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>9.9285</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-000000-6619">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-6619-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-6619-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFEA00-3325-nodesc-normal">
+      <LineStyle>
+        <color>ff00eaff</color>
+        <width>3.325</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFEA00-3325-nodesc-highlight">
+      <LineStyle>
+        <color>ff00eaff</color>
+        <width>4.9875</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFEA00-3325-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFEA00-3325-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFEA00-3325-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Line 1</name>
+      <styleUrl>#line-FFEA00-3325-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.1754356,32.7490986,0
+          -117.175634,32.7491409,0
+          -117.1756233,32.748974,0
+          -117.1769161,32.7490958,0
+          -117.1767337,32.7498267,0
+          -117.1772326,32.7498312,0
+          -117.177694,32.7497726,0
+          -117.1782304,32.7495921,0
+          -117.1782036,32.7494748,0
+          -117.1781177,32.7493755,0
+          -117.1780963,32.7492628,0
+          -117.1781607,32.7489514,0
+          -117.178268,32.7489605,0
+          -117.1782626,32.748762,0
+          -117.1779568,32.7486627,0
+          -117.1778656,32.748586,0
+          -117.1775008,32.7486762,0
+          -117.1771629,32.7488296,0
+          -117.1769268,32.7490868,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Line 2</name>
+      <description>Open to the public weekends and public holidays.</description>
+      <styleUrl>#line-000000-6619</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.1506336,32.7310791,0
+          -117.15058,32.7313778,0
+          -117.1506839,32.7314539,0
+          -117.1580197,32.7314091,0
+          -117.1581579,32.7328791,0
+          -117.1585451,32.7338978,0
+          -117.1585532,32.7370066,0
+          -117.1581984,32.738356,0
+          -117.158243,32.7391784,0
+          -117.1585984,32.7401654,0
+          -117.159104,32.7407356,0
+          -117.1594225,32.7410081,0
+          -117.1583061,32.7409505,0
+          -117.1583446,32.7420732,0
+          -117.1577485,32.7418812,0
+          -117.1567551,32.7418766,0
+          -117.1565992,32.7442917,0
+          -117.1568114,32.7458523,0
+          -117.1566753,32.7466904,0
+          -117.1561455,32.7483775,0
+          -117.1650875,32.7482454,0
+          -117.1661818,32.7489672,0
+          -117.1661925,32.7498154,0
+          -117.1668819,32.7498177,0
+          -117.1675873,32.7498245,0
+          -117.1683034,32.7498071,0
+          -117.1704948,32.7498042,0
+          -117.1704948,32.7478122,0
+          -117.171396,32.7478664,0
+          -117.1714008,32.7474688,0
+          -117.171455,32.7495408,0
+          -117.171396,32.7508982,0
+          -117.1720952,32.7509148,0
+          -117.1721935,32.7511074,0
+          -117.1723804,32.7508486,0
+          -117.174207,32.7508261,0
+          -117.1760094,32.7507719,0
+          -117.1759558,32.7498696,0
+          -117.1751833,32.7498154,0
+          -117.1752028,32.749521,0
+          -117.1754334,32.7495277,0
+          -117.1754415,32.7491127,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Marston House</name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.157924175262,32.7419141527798,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cabrillo Bridge</name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.154519110918,32.7314212236712,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sixth Avenue Playground</name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.158221900463,32.7389775769908,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Hawk St & Fort Stockton Dr]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1721935,32.7511074,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Goldfinch St & Washington St]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.171455,32.7495408,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Goldfinch St & Bush St]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1714008,32.7474688,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Washington St & Dove St]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1683088,32.7497484,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[University Av & 3rd Av]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1629261,32.7481969,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[University Av & 9th Av]]></name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1561856,32.7483497,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Plaza De Panama/Balboa Park</name>
+      <styleUrl>#icon-1899-000000-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1506336,32.7310791,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
